@@ -8,6 +8,11 @@ const Right = () => {
   return <h2>I am Right</h2>;
 };
 const SplitScreenComponent = () => {
-  return <SplitScreen Left={Left} Right={Right} />;
+  return (
+    <SplitScreen LeftCompWidth={1} RightCompWidth={2}>
+      <Left />
+      <Right />
+    </SplitScreen>
+  );
 };
 export default SplitScreenComponent;
