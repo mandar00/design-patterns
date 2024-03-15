@@ -3,4 +3,4 @@ export const SmallAuthorListItem = ({author}) => {
   return(
     <p> Name: {name}, Age: {age}</p>
   )
-}
+} 

@@ -14,7 +14,7 @@ export const books = [
   {
     name: "The Little Prince",
     pages: 85,
-    title: "Antoine de Saint-Exupéry",
+    title: "Antoine de Saint-Exupéry", 
     price: 7.99,
   },
 ];

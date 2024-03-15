@@ -4,7 +4,7 @@ export const authors = [
     age: 55,
     country: "United Kingdom",
     books: ["Fingersmith", "The Night Watch"],
-  },
+  }, 
   {
     name: "Haruki Murakami",
     age: 71,
