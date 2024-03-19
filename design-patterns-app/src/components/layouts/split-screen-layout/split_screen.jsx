@@ -18,4 +18,14 @@ const SplitScreen = ({ children, LeftCompWidth = 1, RightCompWidth = 1 }) => {
     </Container>
   );
 };
+/*
+  for multi split screen component
+    const SplitScreen = ({ children, childrenWidthArray}) => {
+      return (
+        <Container>
+          {children.map((child,childIndex)=><Panel key={childIndex} flex={childrenWidthArray[childIndex]}>{child}</Panel>)}
+        </Container>
+        );
+      };
+*/
 export default SplitScreen;

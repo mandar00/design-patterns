@@ -13,6 +13,16 @@ const SplitScreenComponent = () => {
       <Left />
       <Right />
     </SplitScreen>
+    /*
+    for multi split screen
+      <SplitScreen childrenWidthArray = [1,2,1,1,1]>
+      <One />
+      <Two />
+      <Three />
+      <Four />
+      <Five />
+      </SplitScreen>
+    */
   );
 };
 export default SplitScreenComponent;
