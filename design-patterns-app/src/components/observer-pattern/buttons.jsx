@@ -4,6 +4,7 @@ const Buttons = (props) => {
   const onIncrementCounter = () => {
     emitter.emit("increment");
   };
+//  when the button is clikced an event is emmited  
   const onDecrementCounter = () => {
     emitter.emit("decrement");
   };
