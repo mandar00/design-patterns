@@ -1,3 +1,4 @@
+import { emitter } from "../App";
 import api from "./api";
 /* eslint-disable no-unused-vars */
 
@@ -14,6 +15,7 @@ export const makeRequests = (
   enableLoader = true
 ) => {
   // show loader
+  enableLoader && emitter.emit("showLoader", 10);
 
   // any additional headers  or config can be passed in config
   //  for get and delete method as axios doesn't support body parameter but for making a genric code
@@ -32,9 +34,11 @@ export const makeRequests = (
         error,
         response: null,
       };
+    })
+    .finally(() => {
+      // remove loader
+      enableLoader && emitter.emit("removeLoader");
     });
-
-  // remove loader
 };
 
 /*
@@ -50,9 +54,12 @@ const getResponse = async (
   enableLoader = true
 ) => {
   // show loader
+  enableLoader && emitter.emit("showLoader", 10);
 
   const response = await api[method](url, body, config);
-  return response;
 
   // remove loader
+  enableLoader && emitter.emit("removeLoader");
+
+  return response;
 };

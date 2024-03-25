@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import mitt from "mitt";
+
+
+export const emitter = mitt();
 
 function App() {
   return (
