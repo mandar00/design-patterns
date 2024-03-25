@@ -1,0 +1,8 @@
+- common
+    - common folder will contain all the resuable components that will be used accross the project
+        - like tables, modals, global loader etc
+- Job schdule / backfill / scritps etc
+    - Other non resuable components will have their folder and can have all their components in it
+    - Like job schedule / backfill etc will have their respective controller and layout components
+    - These folders can also have some custom hooks are only usefull within the components of the folder
+    - Or some utiles functions related to the components
