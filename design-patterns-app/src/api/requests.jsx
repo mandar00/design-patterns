@@ -46,7 +46,7 @@ export const makeRequests = (
     and then interpret it and decide what to do next 
     here if the request fails we can do some other action than the genric actions that might have happend using makeRequest
 */
-const getResponse = async (
+export const getResponse = async (
   url,
   config = {},
   body = null,
